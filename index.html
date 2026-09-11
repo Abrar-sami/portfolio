@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abrar Sami - Freelance Data Engineer & Software Developer. Specialized in robust ETL/ELT pipelines, scalable database architectures, and clean backend systems.">
+  <meta name="keywords" content="Data Engineer, Backend Developer, ETL, ELT, SQL, Python, PostgreSQL, MySQL, Database Design, Pipeline Automation, DEPI, CS50">
+  <meta name="author" content="Abrar Sami">
+  <title>Abrar Sami | Freelance Data Engineer &amp; Software Developer</title>
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="Abrar Sami Home">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-text">Abrar<span class="logo-accent">.data</span></span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#objective" class="nav-link">Objective</a></li>
+          <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light mode" title="Toggle Theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience &amp; Education</a></li>
+        <li><a href="#services" class="mobile-nav-link">Services</a></li>
+        <li><a href="#objective" class="mobile-nav-link">Career Objective</a></li>
+        <li><a href="#contact" class="mobile-nav-link mobile-cta">Get in Touch</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="availability-badge reveal">
+            <span class="status-pulse" aria-hidden="true"></span>
+            <span class="status-text">Available for Freelance Contracts &amp; Data Projects</span>
+          </div>
+
+          <h1 class="hero-title reveal">
+            Hi, I'm <span class="gradient-text">Abrar Sami</span>
+          </h1>
+
+          <p class="hero-role reveal">
+            Freelance Data Engineer &amp; Software Developer
+          </p>
+
+          <p class="hero-intro reveal">
+            Specialized in engineering robust <strong>ETL/ELT pipelines</strong>, designing scalable <strong>database architectures</strong>, and developing clean, secure <strong>backend systems</strong> using Python and SQL.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="hero-metrics-bar reveal">
+            <div class="metric-item">
+              <span class="metric-value">99.9%</span>
+              <span class="metric-label">Pipeline Reliability</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-value">&lt; 100ms</span>
+              <span class="metric-label">Optimized Query Latency</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-value">Zero</span>
+              <span class="metric-label">Data Loss Tolerance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Hero Tech Graphic -->
+        <div class="hero-visual reveal">
+          <div class="code-terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal-title">pipeline_orchestrator.py</span>
+              <span class="terminal-badge">ACTIVE</span>
+            </div>
+            <div class="terminal-body">
+              <div class="code-line"><span class="code-keyword">from</span> datacraft <span class="code-keyword">import</span> Pipeline, Warehouse, Security</div>
+              <div class="code-line"><span class="code-comment"># Initialize automated ingestion flow</span></div>
+              <div class="code-line">stream = Pipeline(name=<span class="code-str">"core_data_stream"</span>)</div>
+              <div class="code-line">stream.extract(sources=[<span class="code-str">"api"</span>, <span class="code-str">"oltp_sql"</span>])</div>
+              <div class="code-line">stream.transform(clean=<span class="code-bool">True</span>, validate=<span class="code-bool">True</span>)</div>
+              <div class="code-line">stream.load(target=Warehouse.Stage, isolation=<span class="code-bool">True</span>)</div>
+              <div class="code-line output-line"><span class="code-accent">&#10004; Pipeline status:</span> <span class="status-success">ALL SYSTEMS HEALTHY</span></div>
+              <div class="code-line output-line"><span class="code-accent">&#10004; Data validation:</span> <span class="status-success">100% PASS (0 ERRORS)</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Engineering Profile</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Profile Photo Column -->
+          <div class="about-visual-col reveal">
+            <div class="photo-card-wrapper">
+              <!-- Required Profile Photo Placeholder -->
+              <div class="profile-photo-placeholder">
+                <div class="avatar-inner">
+                  <div class="avatar-initials">AS</div>
+                  <div class="avatar-title">Abrar Sami</div>
+                  <div class="avatar-badge">Data Engineer</div>
+                </div>
+                <div class="avatar-glow"></div>
+              </div>
+
+              <div class="photo-caption-card">
+                <div class="caption-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                </div>
+                <div>
+                  <h4>Engineering Philosophy</h4>
+                  <p>Clean Architecture, Strict Data Isolation &amp; Algorithmic Query Tuning.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Narrative Content Column -->
+          <div class="about-text-col reveal">
+            <h3 class="about-subtitle">
+              Turning raw, disparate data into reliable, production-grade assets.
+            </h3>
+            
+            <p class="about-paragraph">
+              A detail-oriented <strong>Freelance Data Engineer</strong> committed to turning raw data into reliable, production-grade assets. With hands-on expertise spanning relational database design, data warehousing, and automated ETL workflows, my engineering philosophy centers on <strong>clean architecture</strong>, <strong>strict data isolation</strong>, and <strong>query optimization</strong>.
+            </p>
+
+            <p class="about-paragraph">
+              Backed by rigorous computer science training from <strong>Harvard’s CS50</strong> and advanced government technical initiatives (<strong>DEPI</strong>, <strong>ITI</strong>, <strong>FAO</strong>), I deliver scalable, secure software and data solutions that empower businesses to make reliable, data-driven decisions with zero downtime and ironclad integrity.
+            </p>
+
+            <!-- Highlights / Value Pillars -->
+            <div class="about-pillars">
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                </div>
+                <div>
+                  <strong>Relational Precision</strong>
+                  <p>High-performance schema normalization, indexing, and transactional integrity.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                </div>
+                <div>
+                  <strong>Resilient Pipelines</strong>
+                  <p>Automated extraction, validation, error-handling, and staging without bottlenecks.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                </div>
+                <div>
+                  <strong>Security &amp; RBAC</strong>
+                  <p>Strict access isolation and role-based privilege controls safeguarding data assets.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-action-row">
+              <a href="#contact" class="btn btn-primary">Hire Me for Your Project</a>
+              <a href="#experience" class="btn btn-outline">Review Experience</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Technical Arsenal</span>
+          <h2 class="section-title">Skills &amp; Expertise</h2>
+          <p class="section-description">A structured toolkit focused on performance, modular design, and robust data workflows.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Languages & Databases -->
+          <div class="skill-category-card reveal">
+            <div class="skill-category-header">
+              <div class="category-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Languages &amp; Databases</h3>
+                <span class="category-subtitle">Core Syntax &amp; Relational Engines</span>
+              </div>
+            </div>
+
+            <div class="skills-pill-container">
+              <div class="skill-pill">
+                <span class="skill-name">Python</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">SQL (Complex Queries)</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">PostgreSQL</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">MySQL</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">SQL Server</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">C++</span>
+                <span class="skill-level">CS Fundamentals</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">C#</span>
+                <span class="skill-level">OOP &amp; Systems</span>
+              </div>
+            </div>
+
+            <div class="skill-category-footer">
+              <span class="footer-note">Optimized execution plans, transactions (ACID), stored procedures &amp; indexing.</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Data Engineering -->
+          <div class="skill-category-card reveal">
+            <div class="skill-category-header">
+              <div class="category-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Data Engineering</h3>
+                <span class="category-subtitle">Pipelines, Warehousing &amp; APIs</span>
+              </div>
+            </div>
+
+            <div class="skills-pill-container">
+              <div class="skill-pill">
+                <span class="skill-name">ETL / ELT Pipelines</span>
+                <span class="skill-level">Core Focus</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Data Warehousing</span>
+                <span class="skill-level">Dimensional</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Large-scale Processing</span>
+                <span class="skill-level">Optimized</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">RESTful APIs</span>
+                <span class="skill-level">Integration</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Data Modeling (Star/Snowflake)</span>
+                <span class="skill-level">Architect</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Query Optimization</span>
+                <span class="skill-level">High Impact</span>
+              </div>
+            </div>
+
+            <div class="skill-category-footer">
+              <span class="footer-note">Automated multi-source extraction, strict staging, validation &amp; transformation.</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Software & DevOps -->
+          <div class="skill-category-card reveal">
+            <div class="skill-category-header">
+              <div class="category-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Software &amp; DevOps</h3>
+                <span class="category-subtitle">Best Practices, Security &amp; Tools</span>
+              </div>
+            </div>
+
+            <div class="skills-pill-container">
+              <div class="skill-pill">
+                <span class="skill-name">Git &amp; GitHub</span>
+                <span class="skill-level">Version Control</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Clean Code Architecture</span>
+                <span class="skill-level">Standard</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">OOP Principles</span>
+                <span class="skill-level">Design Patterns</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Data Security &amp; Access Isolation</span>
+                <span class="skill-level">RBAC &amp; Least Priv</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Linux &amp; Shell Scripting</span>
+                <span class="skill-level">Automation</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Testing &amp; Validation</span>
+                <span class="skill-level">Defensive</span>
+              </div>
+            </div>
+
+            <div class="skill-category-footer">
+              <span class="footer-note">Modular, maintainable code adhering to testability and production standards.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Engineered Projects</h2>
+          <p class="section-description">A curated selection of robust data platforms, automated pipelines, and warehouse architectures.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card reveal">
+            <div class="project-card-badge">Enterprise System</div>
+            <div class="project-header">
+              <div class="project-icon-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+              </div>
+              <span class="project-number">01</span>
+            </div>
+
+            <h3 class="project-title">Driving &amp; Vehicle License Management System</h3>
+
+            <p class="project-description">
+              A multi-tier management platform engineered to automate vehicle and driver licensing across diverse categories. Implemented robust data security, role-based access isolation, and high-performance relational schemas to handle large-scale transactional data with low latency.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Multi-tier relational architecture with strict data isolation</span>
+              </div>
+              <div class="highlight-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>High-performance schemas tuned for low transactional latency</span>
+              </div>
+              <div class="highlight-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Granular Role-Based Access Control (RBAC) security model</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tag">C#</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">Relational Schemas</span>
+              <span class="tag">RBAC</span>
+              <span class="tag">Transaction Safety</span>
+            </div>
+
+            <div class="project-footer">
+              <a href="#" class="project-link" aria-label="View Driving &amp; Vehicle License Management System Details">
+                <span>View Architecture</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#" class="project-link-subtle" aria-label="View Source Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal">
+            <div class="project-card-badge">Data Pipeline</div>
+            <div class="project-header">
+              <div class="project-icon-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <span class="project-number">02</span>
+            </div>
+
+            <h3 class="project-title">Automated ETL &amp; Data Processing Pipeline</h3>
+
+            <p class="project-description">
+              End-to-end automated data extraction and transformation pipeline built with Python and SQL. Ingests heterogeneous data sources, applies business logic transformations, and stages clean data into warehouse models for analytics.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Automated heterogeneous ingestion (REST APIs, CSV, SQL DBs)</span>
+              </div>
+              <div class="highlight-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Comprehensive business logic cleaning, schema validation &amp; deduplication</span>
+              </div>
+              <div class="highlight-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Automated warehouse staging ready for direct BI consumption</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+              <span class="tag">ETL/ELT</span>
+              <span class="tag">Data Warehousing</span>
+              <span class="tag">Automated Staging</span>
+            </div>
+
+            <div class="project-footer">
+              <a href="#" class="project-link" aria-label="View Automated ETL &amp; Data Processing Pipeline Details">
+                <span>View Architecture</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#" class="project-link-subtle" aria-label="View Source Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal">
+            <div class="project-card-badge">Analytics &amp; BI</div>
+            <div class="project-header">
+              <div class="project-icon-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              </div>
+              <span class="project-number">03</span>
+            </div>
+
+            <h3 class="project-title">Sales Analytics Dashboard &amp; Warehouse Model</h3>
+
+            <p class="project-description">
+              Designed a structured analytical schema and integrated data pipeline to aggregate and analyze multi-channel sales metrics, surfacing key performance indicators with optimal query execution times.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Star schema modeling with denormalized dimensional tables</span>
+              </div>
+              <div class="highlight-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Sub-second aggregation queries powering executive KPIs</span>
+              </div>
+              <div class="highlight-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Automated refresh schedules ensuring fresh decision metrics</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tag">SQL</span>
+              <span class="tag">Python</span>
+              <span class="tag">Dimensional Modeling</span>
+              <span class="tag">Star Schema</span>
+              <span class="tag">Analytics</span>
+            </div>
+
+            <div class="project-footer">
+              <a href="#" class="project-link" aria-label="View Sales Analytics Dashboard &amp; Warehouse Model Details">
+                <span>View Architecture</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#" class="project-link-subtle" aria-label="View Source Repository">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION SECTION -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Track Record &amp; Education</span>
+          <h2 class="section-title">Experience &amp; Qualifications</h2>
+          <p class="section-description">A proven history of technical rigor, fellowship achievements, and foundational engineering education.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div class="timeline-role-info">
+                  <span class="timeline-badge freelance-badge">Independent Practice</span>
+                  <h3 class="timeline-title">Freelance Data Engineer &amp; Developer</h3>
+                  <h4 class="timeline-organization">Independent Consultant / Freelancer</h4>
+                </div>
+                <time class="timeline-date">2025 &ndash; Present</time>
+              </div>
+
+              <ul class="timeline-bullets">
+                <li>Architect and deploy customized ETL/ELT workflows and relational databases tailored for diverse client requirements and transactional volumes.</li>
+                <li>Optimize SQL queries and refactor legacy data pipelines, improving query processing speed and maximizing database availability.</li>
+                <li>Implement secure, modular backend scripts adhering strictly to clean code architecture and stringent data isolation standards.</li>
+              </ul>
+
+              <div class="timeline-tags">
+                <span>ETL Automation</span>
+                <span>SQL Refactoring</span>
+                <span>Data Isolation</span>
+                <span>Client Solutions</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div class="timeline-role-info">
+                  <span class="timeline-badge fellowship-badge">Technical Fellowship</span>
+                  <h3 class="timeline-title">Digital Egypt Pioneers Initiative (DEPI)</h3>
+                  <h4 class="timeline-organization">Data Engineering &amp; Software Development Fellow</h4>
+                </div>
+                <time class="timeline-date">2026</time>
+              </div>
+
+              <ul class="timeline-bullets">
+                <li>Completed hands-on engineering tracks focused on enterprise data workflows, data warehousing architectures, and real-time business analytics.</li>
+                <li>Collaborated in cross-functional engineering teams to model relational databases and build scalable, production-grade analytics dashboards.</li>
+                <li>Applied advanced data transformation frameworks and dimensional modeling techniques to large datasets.</li>
+              </ul>
+
+              <div class="timeline-tags">
+                <span>Enterprise Data Workflows</span>
+                <span>Data Warehousing</span>
+                <span>Dimensional Modeling</span>
+                <span>DEPI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div class="timeline-role-info">
+                  <span class="timeline-badge cert-badge">Core Academic Credential</span>
+                  <h3 class="timeline-title">CS50: Introduction to Computer Science</h3>
+                  <h4 class="timeline-organization">Harvard Online / edX</h4>
+                </div>
+                <time class="timeline-date">Verified Credential</time>
+              </div>
+
+              <ul class="timeline-bullets">
+                <li>Mastered fundamental computer science concepts: computational thinking, algorithms, sorting complexities, and memory management in C.</li>
+                <li>Engineered core data structures from scratch (linked lists, hash tables, tries, and binary search trees) to understand underlying system performance.</li>
+                <li>Applied modern software design principles bridging low-level system operations with high-level Python and SQL database applications.</li>
+              </ul>
+
+              <div class="timeline-tags">
+                <span>Algorithms</span>
+                <span>Memory Management</span>
+                <span>Data Structures</span>
+                <span>Computational Thinking</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div class="timeline-role-info">
+                  <span class="timeline-badge program-badge">Professional Training</span>
+                  <h3 class="timeline-title">Technical Certifications &amp; Programs</h3>
+                  <h4 class="timeline-organization">Mahara-Tech, Edraak, FAO Special Training</h4>
+                </div>
+                <time class="timeline-date">Specialized Training</time>
+              </div>
+
+              <ul class="timeline-bullets">
+                <li>Completed comprehensive specialized coursework in Python programming, software development foundations, and object-oriented architectures.</li>
+                <li>Trained in data-driven domain applications, technical data pipelines, and public-sector analytical reporting initiatives.</li>
+                <li>Refined technical skills in defensive coding, relational schema design, and software lifecycle best practices.</li>
+              </ul>
+
+              <div class="timeline-tags">
+                <span>Python Programming</span>
+                <span>ITI / Mahara-Tech</span>
+                <span>FAO Domain Data</span>
+                <span>Software Foundations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">What I Offer</span>
+          <h2 class="section-title">Professional Services</h2>
+          <p class="section-description">Specialized data engineering and backend development services delivered with reliability and precision.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card reveal">
+            <div class="service-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+            </div>
+            <h3 class="service-title">ETL/ELT Pipeline Development</h3>
+            <p class="service-text">
+              Building reliable, automated pipelines to extract, clean, validate, and load data seamlessly across heterogeneous systems. Designed with automated error handling, retry logic, and zero-loss staging.
+            </p>
+            <ul class="service-checklist">
+              <li>Heterogeneous data ingestion (APIs, files, databases)</li>
+              <li>Automated scheduling &amp; status alerting</li>
+              <li>Data deduplication &amp; validation rules</li>
+            </ul>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card reveal">
+            <div class="service-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+            </div>
+            <h3 class="service-title">Database Design &amp; Query Optimization</h3>
+            <p class="service-text">
+              Designing normalized relational databases (3NF) and optimizing complex SQL queries for peak operational throughput. Tuning execution plans, re-indexing tables, and eliminating I/O bottlenecks.
+            </p>
+            <ul class="service-checklist">
+              <li>High-throughput schema architecture &amp; indexing</li>
+              <li>Execution plan analysis &amp; query refactoring</li>
+              <li>Transactional ACID integrity &amp; concurrency locking</li>
+            </ul>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card reveal">
+            <div class="service-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </div>
+            <h3 class="service-title">Data Warehousing Solutions</h3>
+            <p class="service-text">
+              Structuring analytical models and data marts ready for business intelligence and reporting. Transforming raw operational databases into optimized star or snowflake dimensional schemas.
+            </p>
+            <ul class="service-checklist">
+              <li>Dimensional modeling (Fact &amp; Dimension tables)</li>
+              <li>Aggregated data marts for fast BI reporting</li>
+              <li>Historical tracking (SCD Type 1 &amp; Type 2)</li>
+            </ul>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card reveal">
+            <div class="service-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+            </div>
+            <h3 class="service-title">Custom Backend &amp; API Integration</h3>
+            <p class="service-text">
+              Developing clean Python/SQL backend engines and RESTful API integrations for secure, isolated data flow. Implementing robust authentication, logging, and strict data validation layers.
+            </p>
+            <ul class="service-checklist">
+              <li>Modular, clean code Python backend architectures</li>
+              <li>RESTful endpoints for internal &amp; external data exchange</li>
+              <li>Role-based access control &amp; secure data isolation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREER OBJECTIVE SECTION -->
+    <section id="objective" class="section objective-section">
+      <div class="container">
+        <div class="objective-card reveal">
+          <div class="objective-icon-glow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+          </div>
+          
+          <span class="objective-badge">Career Mission &amp; Purpose</span>
+          
+          <h2 class="objective-title">Career Objective</h2>
+
+          <blockquote class="objective-quote">
+            &ldquo;To deliver high-value, scalable data engineering solutions as an independent specialist, collaborating with businesses globally to build resilient data infrastructure, automate workflows, and uphold the highest standards of data integrity and security.&rdquo;
+          </blockquote>
+
+          <div class="objective-values">
+            <div class="value-item">
+              <span class="value-title">Scalability</span>
+              <span class="value-desc">Built to accommodate expanding data volumes effortlessly.</span>
+            </div>
+            <div class="value-divider"></div>
+            <div class="value-item">
+              <span class="value-title">Precision</span>
+              <span class="value-desc">Flawless schema modeling and reliable query execution.</span>
+            </div>
+            <div class="value-divider"></div>
+            <div class="value-item">
+              <span class="value-title">Integrity</span>
+              <span class="value-desc">Uncompromising data isolation and zero tolerance for loss.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-description">Have a data pipeline to automate, a database to optimize, or an engineering project to launch? Let's discuss.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info & Direct Links -->
+          <div class="contact-info-col reveal">
+            <h3 class="contact-subtitle">Direct Communication Channels</h3>
+            <p class="contact-intro">
+              Whether you need end-to-end data pipeline development or relational performance tuning, I am available for direct freelance consultations.
+            </p>
+
+            <div class="contact-channels">
+              <!-- LinkedIn Link -->
+              <a href="#" class="contact-channel-item" target="_blank" rel="noopener noreferrer">
+                <div class="channel-icon-box linkedin">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">LinkedIn</span>
+                  <span class="channel-value">Connect on LinkedIn</span>
+                </div>
+                <span class="channel-arrow">&rarr;</span>
+              </a>
+
+              <!-- GitHub Link -->
+              <a href="#" class="contact-channel-item" target="_blank" rel="noopener noreferrer">
+                <div class="channel-icon-box github">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">GitHub</span>
+                  <span class="channel-value">Review Source Repositories</span>
+                </div>
+                <span class="channel-arrow">&rarr;</span>
+              </a>
+
+              <!-- Mostaql / Freelance Profile -->
+              <a href="#" class="contact-channel-item" target="_blank" rel="noopener noreferrer">
+                <div class="channel-icon-box mostaql">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Mostaql / Freelance Profile</span>
+                  <span class="channel-value">Hire via Freelance Platforms</span>
+                </div>
+                <span class="channel-arrow">&rarr;</span>
+              </a>
+
+              <!-- Direct Email Link -->
+              <a href="mailto:abrar.sami.dev@example.com" class="contact-channel-item">
+                <div class="channel-icon-box email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Direct Email</span>
+                  <span class="channel-value">abrar.sami.dev@example.com</span>
+                </div>
+                <span class="channel-arrow">&rarr;</span>
+              </a>
+            </div>
+
+            <div class="availability-card">
+              <div class="avail-indicator"></div>
+              <div>
+                <strong>Guaranteed Response</strong>
+                <p>Replies within 24 hours on business days.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form (HTML only, client interactive) -->
+          <div class="contact-form-col reveal">
+            <div class="form-card">
+              <h3 class="form-title">Send a Project Inquiry</h3>
+              <p class="form-subtitle">Fill out the details below and I will get back to you promptly.</p>
+
+              <form id="portfolio-contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="contact-name">Your Full Name <span class="required">*</span></label>
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Sarah Jenkins" required>
+                  <span class="form-error-msg">Please enter your name</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email">Your Email Address <span class="required">*</span></label>
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. sarah@example.com" required>
+                  <span class="form-error-msg">Please provide a valid email address</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-service">Required Service <span class="required">*</span></label>
+                  <select id="contact-service" name="service" class="form-input form-select" required>
+                    <option value="" disabled selected>Select a service category...</option>
+                    <option value="etl-pipelines">ETL/ELT Pipeline Development</option>
+                    <option value="db-optimization">Database Design &amp; Query Optimization</option>
+                    <option value="data-warehousing">Data Warehousing Solutions</option>
+                    <option value="backend-integration">Custom Backend &amp; API Integration</option>
+                    <option value="other-consulting">General Freelance Consulting</option>
+                  </select>
+                  <span class="form-error-msg">Please select a service</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message">Project Overview &amp; Requirements <span class="required">*</span></label>
+                  <textarea id="contact-message" name="message" class="form-input form-textarea" rows="5" placeholder="Briefly describe your dataset, technical goals, timeline, and deliverables..." required></textarea>
+                  <span class="form-error-msg">Please enter your message</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                  <span>Send Project Message</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+
+                <!-- Feedback banner on submit -->
+                <div id="form-feedback" class="form-feedback hidden" role="alert" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-symbol">&lt;/&gt;</span>
+          <span class="logo-text">Abrar<span class="logo-accent">.data</span></span>
+        </a>
+        <p class="footer-tagline">
+          Engineering scalable data pipelines, resilient warehouse architectures, and secure backend systems with precision.
+        </p>
+      </div>
+
+      <div class="footer-links-group">
+        <span class="footer-heading">Navigation</span>
+        <ul class="footer-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-back-to-top">
+        <a href="#hero" class="back-to-top-btn" aria-label="Back to top">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+          <span>Back to Top</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-container">
+        <p class="copyright-text">
+          &copy; 2026 Abrar Sami. All rights reserved. Crafted with clean architecture &amp; high performance.
+        </p>
+        <p class="footer-status-text">
+          <span class="pulse-indicator"></span> Ready for new client challenges
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/script.js"></script>
+</body>
+</html>
