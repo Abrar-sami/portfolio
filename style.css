@@ -1322,6 +1322,12 @@ img, svg {
   border: 1px solid rgba(245, 158, 11, 0.3);
 }
 
+.academic-badge {
+  background-color: rgba(56, 189, 248, 0.15);
+  color: var(--accent-cyan);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
 .timeline-title {
   font-size: 1.3rem;
   font-weight: 700;
@@ -1628,10 +1634,6 @@ img, svg {
   color: #0f172a;
 }
 
-.channel-icon-box.mostaql {
-  background-color: rgba(16, 185, 129, 0.2);
-  color: #10b981;
-}
 
 .channel-icon-box.email {
   background-color: rgba(99, 102, 241, 0.2);
