@@ -246,33 +246,59 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Simulate sending inquiry
-      const originalBtnHTML = submitBtn.innerHTML;
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = `
-        <span>Dispatching message...</span>
-        <svg class="spinner" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="12" y1="2" x2="12" y2="6"></line>
-          <line x1="12" y1="18" x2="12" y2="22"></line>
-          <line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line>
-          <line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line>
-          <line x1="2" y1="12" x2="6" y2="12"></line>
-          <line x1="18" y1="12" x2="22" y2="12"></line>
-          <line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line>
-          <line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line>
-        </svg>
-      `;
+      // Check if Formspree endpoint is configured or placeholder
+      const formAction = contactForm.getAttribute('action') || '';
+      const isPlaceholder = formAction.includes('YOUR_FORM_ID');
 
-      setTimeout(() => {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalBtnHTML;
-        contactForm.reset();
+      if (!isPlaceholder && formAction) {
+        // Live Formspree submission via AJAX
+        const formData = new FormData(contactForm);
+        fetch(formAction, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        })
+        .then((response) => {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnHTML;
+          if (response.ok) {
+            contactForm.reset();
+            showFeedback(
+              '✔ Message sent successfully! Thank you for reaching out. Abrar will review your project details and respond within 24 hours.',
+              'success'
+            );
+          } else {
+            response.json().then((data) => {
+              if (Object.hasOwn(data, 'errors')) {
+                showFeedback(data['errors'].map(error => error['message']).join(', '), 'error');
+              } else {
+                showFeedback('Oops! There was an issue submitting your form. Please try again or email directly.', 'error');
+              }
+            }).catch(() => {
+              showFeedback('Oops! There was an issue submitting your form. Please try again or email directly.', 'error');
+            });
+          }
+        })
+        .catch(() => {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnHTML;
+          showFeedback('Oops! Network error occurred. Please check your connection or contact via direct email.', 'error');
+        });
+      } else {
+        // Fallback simulation when placeholder is active
+        setTimeout(() => {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnHTML;
+          contactForm.reset();
 
-        showFeedback(
-          '✔ Message received! Thank you for reaching out. Abrar will review your project details and respond within 24 hours.',
-          'success'
-        );
-      }, 900);
+          showFeedback(
+            '✔ Message received! (Formspree placeholder active — replace YOUR_FORM_ID in index.html to route submissions directly to your email inbox).',
+            'success'
+          );
+        }, 800);
+      }
     });
 
     // Real-time error clearing on input
